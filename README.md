@@ -59,21 +59,21 @@ Describe any challenges encountered while building the app.
 ### Models (For MVP->Minimal Viable Product)
 
 User
-|   Property  |  Type   |              Description                          |
-|:-----------:|:-------:|:-------------------------------------------------:|
-|objectId     |String   |unique id for the user object(default)   	    |  
-|FirstName    |String   |user first name                     	            |  
-|LastName     |String   |user last name                      	            |    
-|username     |String   |name used for user whilst using app   	            |
-|password     |String   |used to create/login to account              	    |
-|email        |String   |used to create/login to account               	    |
-|hasPhoto     |boolean  |flag for verifying if user has a profile image     |  
-|createdAt    |DateTime |date when user account was created(default)        |
-|updatedAt    |DateTime |date when user account was last updated (default)  |
+|   Property   |  Type    |              Description                           |
+|--------------|----------|----------------------------------------------------|
+| objectId     | String   | unique id for the user object(default)   	       |  
+| FirstName    | String   | user first name                     	           |  
+| LastName     | String   | user last name                      	           |    
+| username     | String   | name used for user whilst using app   	           |
+| password     | String   | used to create/login to account              	   |
+| email        | String   | used to create/login to account               	   |
+| hasPhoto     | boolean  | flag for verifying if user has a profile image     |  
+| createdAt    | DateTime | date when user account was created(default)        |
+| updatedAt    | DateTime | date when user account was last updated (default)  |
 
 Post
 |   Property      |          Type             |            Description                    |
-|:---------------:|:-------------------------:|:-----------------------------------------:|
+|-----------------|---------------------------|-------------------------------------------|
 | objectId        | String                    | unique id for the Post object(default)    |  
 | userPointer     | Pointer to User object    | identify creator of post                  |  
 | fandomePointer  | Pointer to Fandome object | identify which fandome post belongs to    |  
@@ -84,7 +84,7 @@ Post
 
 Photo
 |   Property      |       Type                |            Description                    	   |
-|:---------------:|:-------------------------:|:----------------------------------------------:|
+|-----------------|---------------------------|------------------------------------------------|
 | objectId        | String                    | unique id for the photo object   (default)     |  
 | postPointer     | Pointer to Post object    | identify photo owner-if belonging to a Post    |
 | fandomePointer  | Pointer to Fandome object | identify photo owner-if belonging to a Fandome |  
@@ -96,7 +96,7 @@ Photo
 
 Fandome
 |   Property         |  Type    |          Description               			    |
-|:------------------:|:--------:|:-------------------------------------------------:|
+|--------------------|----------|---------------------------------------------------|
 | objectId           | String   | unique id for the Fandome object(default)  		|  
 | fandomeDescription | String   | text description of fandome                    	|  
 | fandomeName        | String   | name of fandome                   				|    
@@ -106,7 +106,7 @@ Fandome
 
 following
 |      Property      |  Type                     |               Description              		  |
-|:------------------:|:-------------------------:|:----------------------------------------------:|
+|--------------------|---------------------------|------------------------------------------------|
 | objectId           | String                    | unique id for the following object(default)    |  
 | UserPointer        | Pointer to User object    | identify which user is the follower            |  
 | FandomePointer     | Pointer to Fandome object | identify which fandome the user follows        |    
@@ -132,5 +132,6 @@ following
 * Fandom Hub Page
     * (Read/Get) Query the selected Fandom object [hit 1 module Fandome]
     * (Read/Get) Query all the post where belonging to the selected Fandome object [hit 1 module Post]
+
 
 
