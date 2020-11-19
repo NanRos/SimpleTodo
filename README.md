@@ -59,17 +59,17 @@ Describe any challenges encountered while building the app.
 ### Models (For MVP->Minimal Viable Product)
 
 User
-|   Property   |  Type    |              Description                           |
-|:------------:|:--------:|:--------------------------------------------------:|
-| objectId     | String   | unique id for the user object(default)   	       |  
-| FirstName    | String   | user first name                     	           |  
-| LastName     | String   | user last name                      	           |    
-| username     | String   | name used for user whilst using app   	           |
-| password     | String   | used to create/login to account              	   |
-| email        | String   | used to create/login to account               	   |
-| hasPhoto     | boolean  | flag for verifying if user has a profile image     |  
-| createdAt    | DateTime | date when user account was created(default)        |
-| updatedAt    | DateTime | date when user account was last updated (default)  |
+|   Property  |  Type   |              Description                          |
+|:-----------:|:-------:|:-------------------------------------------------:|
+|objectId     |String   |unique id for the user object(default)   	    |  
+|FirstName    |String   |user first name                     	            |  
+|LastName     |String   |user last name                      	            |    
+|username     |String   |name used for user whilst using app   	            |
+|password     |String   |used to create/login to account              	    |
+|email        |String   |used to create/login to account               	    |
+|hasPhoto     |boolean  |flag for verifying if user has a profile image     |  
+|createdAt    |DateTime |date when user account was created(default)        |
+|updatedAt    |DateTime |date when user account was last updated (default)  |
 
 Post
 |   Property      |          Type             |            Description                    |
